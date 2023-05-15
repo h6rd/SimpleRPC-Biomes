@@ -1,0 +1,947 @@
+
+#General Config Section. See https://readme.firstdarkdev.xyz/simple-rpc/introduction/
+[general]
+	#The Application ID of the Discord App to use
+	applicationID = 1107371471430500432
+	#Enable/Disable the mod
+	enabled = true
+	#Enable/Disable debugging mode. WARNING: MAY CAUSE LOG SPAM!
+	debugging = false
+	#Enable/Disable the in game config screen. ONLY AVAILABLE WHEN CLOTH CONFIG IS INSTALLED!
+	configScreen = true
+	#Display the Icon and Pack Name in place of LargeImage from compatible launchers. DOES NOT WORK WITH CUSTOM APPS! ONLY THE DEFAULT ONE!
+	launcherIntegration = false
+	#Internal Version Number. NO TOUCHY!
+	version = 18
+
+#The Game Loading event
+[init]
+	#Enable/Disable the Game Loading Event
+	enabled = true
+	#The first line of text under the app name
+	description = "Minecraft is loading"
+	#The second line of text under the app name
+	state = "Game Starting..."
+	#The Asset ID of the image to display as the large image
+	largeImageKey = ["mclogo"]
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "It's Minecraft %mcver%, but modded"
+	#The Asset ID of the image to display as the small image
+	smallImageKey = ["mclogo"]
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "%mods% mods installed"
+	#The buttons to display on Discord
+	buttons = []
+
+#The Main Menu event
+[main_menu]
+	#Enable/Disable the Main Menu Event
+	enabled = true
+	#The first line of text under the app name
+	description = "%player% is currently lazy"
+	#The seconds line of text under the app name
+	state = "Chilling in the menu"
+	#The Asset ID of the image to display as the large image
+	largeImageKey = ["mclogo"]
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "It's Minecraft %mcver%, but modded"
+	#The Asset ID of the image to display as the small image
+	smallImageKey = ["mclogo"]
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "%mods% mods installed"
+	#The buttons to display on Discord
+	buttons = []
+
+#The Server List event
+[server_list]
+	#Enable/Disable the Server List Event
+	enabled = true
+	#The first line of text under the app name
+	description = "%player% is looking for a server"
+	#The second line of text under the app name
+	state = "Searching for friends"
+	#The Asset ID of the image to display as the large image
+	largeImageKey = ["mclogo"]
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "It's Minecraft %mcver%, but modded"
+	#The Asset ID of the image to display as the small image
+	smallImageKey = ["mclogo"]
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "%mods% mods installed"
+	#The buttons to display on Discord
+	buttons = []
+
+#The Realms Screen event
+[realms_list]
+	#Enable/Disable the Realms Screen Event
+	enabled = true
+	#The first line of text under the app name
+	description = "%player% is looking for a Realm"
+	#The second line of text under the app name
+	state = "Browsing Realms"
+	#The Asset ID of the image to display as the large image
+	largeImageKey = ["mclogo"]
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "It's Minecraft %mcver%, but modded"
+	#The Asset ID of the image to display as the small image
+	smallImageKey = ["mclogo"]
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "%mods% mods installed"
+	#The buttons to display on Discord
+	buttons = []
+
+#The Join Game Event
+[join_game]
+	#Enable/Disable the Join Game Event
+	enabled = true
+	#The first line of text under the app name
+	description = "%player% is joining a game"
+	#The second line of text under the app name
+	state = "Joining Game"
+	#The Asset ID of the image to display as the large image
+	largeImageKey = ["mclogo"]
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "It's Minecraft %mcver%, but modded"
+	#The Asset ID of the image to display as the small image
+	smallImageKey = ["mclogo"]
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "%mods% mods installed"
+	#The buttons to display on Discord
+	buttons = []
+
+#The Single Player Event
+[single_player]
+	#Enable/Disable the Single Player Event
+	enabled = true
+	#The first line of text under the app name
+	description = "Currently In %world%"
+	#The second line of text under the app name
+	state = "Playing lonely mode"
+	#The Asset ID of the image to display as the large image
+	largeImageKey = ["mclogo"]
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "It's Minecraft %mcver%, but modded"
+	#The Asset ID of the image to display as the small image
+	smallImageKey = ["mclogo"]
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "%mods% mods installed"
+	#The buttons to display on Discord
+	buttons = []
+
+#The Multi Player Event
+[multi_player]
+	#Enable/Disable the Multi Player Event
+	enabled = true
+	#The first line of text under the app name
+	description = "Playing on %servername% with %players% players"
+	#The second line of text under the app name
+	state = "Playing online"
+	#The Asset ID of the image to display as the large image
+	largeImageKey = ["mclogo"]
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "It's Minecraft %mcver%, but modded"
+	#The Asset ID of the image to display as the small image
+	smallImageKey = ["mclogo"]
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "%mods% mods installed"
+	#The buttons to display on Discord
+	buttons = []
+
+#The Realms Game Event
+[realms]
+	#Enable/Disable the Realms Game Event
+	enabled = true
+	#The first line of text under the app name
+	description = "Playing on %realmname%"
+	#The second line of text under the app name
+	state = "Playing on a Realm"
+	#The Asset ID of the image to display as the large image
+	largeImageKey = ["mclogo"]
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "It's Minecraft %mcver%, but modded"
+	#The Asset ID of the image to display as the small image
+	smallImageKey = ["mclogo"]
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "%realmdescription%"
+	#The buttons to display on Discord
+	buttons = []
+
+#Fallback event for disabled events
+[generic]
+	#The first line of text under the app name
+	description = "Playing Minecraft"
+	#The second line of text under the app name
+	state = ""
+	#The Asset ID of the image to display as the large image
+	largeImageKey = ["mclogo"]
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "It's Minecraft %mcver%, but modded"
+	#The Asset ID of the image to display as the small image
+	smallImageKey = ["mclogo"]
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "%mods% mods installed"
+	#The buttons to display on Discord
+	buttons = []
+
+#Custom Config Variables that you can use
+[custom]
+	#Must these variables be parsed along with other variables
+	enabled = true
+	#Your custom variables to add
+	variables = []
+
+#Dimension Information Overrides
+[dimension_overrides]
+	#Allows you to override the displayed values for dimensions
+	enabled = true
+
+	#The Dimensions to override
+	[[dimension_overrides.dimensions]]
+		#The name of the Dimension/Biome to override. FORMAT: modid:dimension or modid:biome
+		name = "overworld|plains|sunflower_plains|snowy_plains|ice_spikes|desert|swamp|mangrove_swamp|forest|flower_forest|birch_forest|dark_forest|old_growth_birch_forest|old_growth_pine_taiga|old_growth_spruce_taiga|taiga|snowy_taiga|savanna|savanna_plateau|windswept_hills|windswept_gravelly_hills|windswept_forest|windswept_savanna|jungle|sparse_jungle|bamboo_jungle|badlands|eroded_badlands|wooded_badlands|meadow|grove|snowy_slopes|frozen_peaks|jagged_peaks|stony_peaks|river|frozen_river|beach|snowy_beach|stony_shore|warm_ocean|lukewarm_ocean|deep_lukewarm_ocean|ocean|deep_ocean|cold_ocean|deep_cold_ocean|frozen_ocean|deep_frozen_ocean|mushroom_fields|dripstone_caves|lush_caves|deep_dark"
+		#The first line of text under the app name
+		description = "%player% is in The Overworld"
+		#The second line of text under the app name
+		state = ""
+		#The Asset ID of the image to display as the large image
+		largeImageKey = ["overworld"]
+		#The text that gets displayed when the large image is hovered
+		largeImageText = "In the Overworld"
+		#The Asset ID of the image to display as the small image
+		smallImageKey = ["mclogo"]
+		#The text that gets displayed when the small image is hovered
+		smallImageText = "%mods% mods installed"
+		#The buttons to display on Discord
+		buttons = []
+
+	[[dimension_overrides.dimensions]]
+		#The name of the Dimension/Biome to override. FORMAT: modid:dimension or modid:biome
+		name = "nether_wastes|basalt_deltas|crimson_forest|soul_sand_valley"
+		#The first line of text under the app name
+		description = "%player% is in The Nether"
+		#The second line of text under the app name
+		state = ""
+		#The Asset ID of the image to display as the large image
+		largeImageKey = ["nether_wastes"]
+		#The text that gets displayed when the large image is hovered
+		largeImageText = "In the Nether"
+		#The Asset ID of the image to display as the small image
+		smallImageKey = ["mclogo"]
+		#The text that gets displayed when the small image is hovered
+		smallImageText = "%mods% mods installed"
+		#The buttons to display on Discord
+		buttons = []
+
+	[[dimension_overrides.dimensions]]
+		#The name of the Dimension/Biome to override. FORMAT: modid:dimension or modid:biome
+		name = "the_end|end_barrens|end_highlands|end_midlands|small_end_islands"
+		#The first line of text under the app name
+		description = "%player% is in The End"
+		#The second line of text under the app name
+		state = ""
+		#The Asset ID of the image to display as the large image
+		largeImageKey = ["the_end"]
+		#The text that gets displayed when the large image is hovered
+		largeImageText = "In the End"
+		#The Asset ID of the image to display as the small image
+		smallImageKey = ["mclogo"]
+		#The text that gets displayed when the small image is hovered
+		smallImageText = "%mods% mods installed"
+		#The buttons to display on Discord
+		buttons = []
+
+
+#CUSTOM
+
+  #lush_caves
+	[[dimension_overrides.dimensions]]
+		name = "biome:lush_caves"
+		description = "%player% is in The Lush Caves"
+		state = ""
+		largeImageKey = ["caves"]
+		largeImageText = "In the Lush Caves"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+		
+  #desert
+	[[dimension_overrides.dimensions]]
+		name = "biome:desert"
+		description = "%player% is in The Desert"
+		state = ""
+		largeImageKey = ["desert"]
+		largeImageText = "In the Desert"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []	
+		
+  #badlands
+	[[dimension_overrides.dimensions]]
+		name = "biome:badland"
+		description = "%player% is in The Badlands"
+		state = ""
+		largeImageKey = ["badland"]
+		largeImageText = "In the Badlands"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []		
+
+  #bamboo_jungle
+	[[dimension_overrides.dimensions]]
+		name = "biome:bamboo_jungle"
+		description = "%player% is in Bamboo Jungle"
+		state = ""
+		largeImageKey = ["bamboo_jungle"]
+		largeImageText = "In the Bamboo Jungle"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #basalt_deltas
+	[[dimension_overrides.dimensions]]
+		name = "biome:basalt_deltas"
+		description = "%player% is in The Basalt Deltas"
+		state = ""
+		largeImageKey = ["basalt_deltas"]
+		largeImageText = "In the Basalt Deltas"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #birch_forest
+	[[dimension_overrides.dimensions]]
+		name = "biome:birch_forest"
+		description = "%player% is in The Birch Forest"
+		state = ""
+		largeImageKey = ["birch_forest"]
+		largeImageText = "In the Birch Forest"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #cold_ocean
+	[[dimension_overrides.dimensions]]
+		name = "biome:cold_ocean"
+		description = "%player% is in The Cold Ocean"
+		state = ""
+		largeImageKey = ["cold_ocean"]
+		largeImageText = "In the Cold Ocean"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #crimson_forest
+	[[dimension_overrides.dimensions]]
+		name = "biome:crimson_forest"
+		description = "%player% is in The Crimson Forest"
+		state = ""
+		largeImageKey = ["crimson_forest"]
+		largeImageText = "In the Crimson Forest"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #dark_forest
+	[[dimension_overrides.dimensions]]
+		name = "biome:dark_forest"
+		description = "%player% is in The Dark Forest"
+		state = ""
+		largeImageKey = ["dark_forest"]
+		largeImageText = "In the Dark Forest"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #deep_cold_ocean
+	[[dimension_overrides.dimensions]]
+		name = "biome:deep_cold_ocean"
+		description = "%player% is in The Deep Cold Ocean"
+		state = ""
+		largeImageKey = ["deep_cold_ocean"]
+		largeImageText = "In the Deep Cold Ocean"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #deep_dark
+	[[dimension_overrides.dimensions]]
+		name = "biome:deep_dark"
+		description = "%player% is in The Deep Dark"
+		state = ""
+		largeImageKey = ["deep_dark"]
+		largeImageText = "In the Deep Dark"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #deep_frozen_ocean
+	[[dimension_overrides.dimensions]]
+		name = "biome:deep_frozen_ocean"
+		description = "%player% is in The Deep Frozen Ocean"
+		state = ""
+		largeImageKey = ["deep_frozen_ocean"]
+		largeImageText = "In the Deep Frozen Ocean"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #deep_lukewarm_ocean
+	[[dimension_overrides.dimensions]]
+		name = "biome:deep_lukewarm_ocean"
+		description = "%player% is in The Deep Lukewarm Ocean"
+		state = ""
+		largeImageKey = ["deep_lukewarm_ocean"]
+		largeImageText = "In the Deep Lukewarm Ocean"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #deep_ocean
+	[[dimension_overrides.dimensions]]
+		name = "biome:deep_ocean"
+		description = "%player% is in The Deep Ocean"
+		state = ""
+		largeImageKey = ["deep_ocean"]
+		largeImageText = "In the Deep Ocean"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #dripstone_caves
+	[[dimension_overrides.dimensions]]
+		name = "biome:dripstone_caves"
+		description = "%player% is in The Dripstone Caves"
+		state = ""
+		largeImageKey = ["dripstone_caves"]
+		largeImageText = "In the Dripstone Caves"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #end_barrens
+	[[dimension_overrides.dimensions]]
+		name = "biome:end_barrens"
+		description = "%player% is in The End Barrens"
+		state = ""
+		largeImageKey = ["end_barrens"]
+		largeImageText = "In the End Barrens"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #end_highlands
+	[[dimension_overrides.dimensions]]
+		name = "biome:end_highlands"
+		description = "%player% is in The End Highlands"
+		state = ""
+		largeImageKey = ["end_highlands"]
+		largeImageText = "In the End Highlands"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #end_midlands
+	[[dimension_overrides.dimensions]]
+		name = "biome:end_midlands"
+		description = "%player% is in The End Midlands"
+		state = ""
+		largeImageKey = ["end_midlands"]
+		largeImageText = "In the End Midlands"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #eroded_badlands
+	[[dimension_overrides.dimensions]]
+		name = "biome:eroded_badlands"
+		description = "%player% is in The Eroded Badlands"
+		state = ""
+		largeImageKey = ["eroded_badlands"]
+		largeImageText = "In the Eroded Badlands"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #flower_forest
+	[[dimension_overrides.dimensions]]
+		name = "biome:flower_forest"
+		description = "%player% is in The Flower Forest"
+		state = ""
+		largeImageKey = ["flower_forest"]
+		largeImageText = "In the Flower Forest"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #forest
+	[[dimension_overrides.dimensions]]
+		name = "biome:forest"
+		description = "%player% is in The Forest"
+		state = ""
+		largeImageKey = ["forest"]
+		largeImageText = "In the Forest"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #frozen_ocean
+	[[dimension_overrides.dimensions]]
+		name = "biome:frozen_ocean"
+		description = "%player% is in The Frozen Ocean"
+		state = ""
+		largeImageKey = ["frozen_ocean"]
+		largeImageText = "In the Frozen Oceans"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #frozen_peaks
+	[[dimension_overrides.dimensions]]
+		name = "biome:frozen_peaks"
+		description = "%player% is in The Frozen Peaks"
+		state = ""
+		largeImageKey = ["frozen_peaks"]
+		largeImageText = "In the Frozen Peaks"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #frozen_river
+	[[dimension_overrides.dimensions]]
+		name = "biome:frozen_river"
+		description = "%player% is in The Frozen River"
+		state = ""
+		largeImageKey = ["frozen_river"]
+		largeImageText = "In the Frozen River"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #grove
+	[[dimension_overrides.dimensions]]
+		name = "biome:grove"
+		description = "%player% is in The Grove"
+		state = ""
+		largeImageKey = ["grove"]
+		largeImageText = "In the Grove"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #ice_spikes
+	[[dimension_overrides.dimensions]]
+		name = "biome:ice_spikes"
+		description = "%player% is in The Ice Spikes"
+		state = ""
+		largeImageKey = ["ice_spikes"]
+		largeImageText = "In the Ice Spikes"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #jagged_peaks
+	[[dimension_overrides.dimensions]]
+		name = "biome:jagged_peaks"
+		description = "%player% is in The Jagged Peaks"
+		state = ""
+		largeImageKey = ["jagged_peaks"]
+		largeImageText = "In the Jagged Peaks"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #jungle
+	[[dimension_overrides.dimensions]]
+		name = "biome:jungle"
+		description = "%player% is in The Jungle"
+		state = ""
+		largeImageKey = ["jungle"]
+		largeImageText = "In the Jungle"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #lukewarm_ocean
+	[[dimension_overrides.dimensions]]
+		name = "biome:lukewarm_ocean"
+		description = "%player% is in The Lukewarm Ocean"
+		state = ""
+		largeImageKey = ["lukewarm_ocean"]
+		largeImageText = "In the Lukewarm Ocean"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #mangrove_swamp
+	[[dimension_overrides.dimensions]]
+		name = "biome:mangrove_swamp"
+		description = "%player% is in The Mangrove Swamp"
+		state = ""
+		largeImageKey = ["mangrove_swamp"]
+		largeImageText = "In the Mangrove Swamp"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #meadow
+	[[dimension_overrides.dimensions]]
+		name = "biome:meadow"
+		description = "%player% is in The Meadow"
+		state = ""
+		largeImageKey = ["meadow"]
+		largeImageText = "In the Meadow"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #mushroom_fields
+	[[dimension_overrides.dimensions]]
+		name = "biome:mushroom_fields"
+		description = "%player% is in The Mushroom Fields"
+		state = ""
+		largeImageKey = ["mushroom_fields"]
+		largeImageText = "In the Mushroom Fields"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #the_nether
+	[[dimension_overrides.dimensions]]
+		name = "biome:desert"
+		description = "%player% is in The Nether Wastes"
+		state = ""
+		largeImageKey = ["the_nether"]
+		largeImageText = "In the Nether Wastes"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #ocean
+	[[dimension_overrides.dimensions]]
+		name = "biome:ocean"
+		description = "%player% is in The Ocean"
+		state = ""
+		largeImageKey = ["ocean"]
+		largeImageText = "In the Ocean"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #old_growth_birch_forest
+	[[dimension_overrides.dimensions]]
+		name = "biome:old_growth_birch_forest"
+		description = "%player% is in The Old Birch Forest"
+		state = ""
+		largeImageKey = ["old_growth_birch_forest"]
+		largeImageText = "In the Old Birch Forest"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #old_growth_pine_taiga
+	[[dimension_overrides.dimensions]]
+		name = "biome:old_growth_pine_taiga"
+		description = "%player% is in The Old Pine Taiga"
+		state = ""
+		largeImageKey = ["old_growth_pine_taiga"]
+		largeImageText = "In the Old Pine Taiga"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #old_growth_spruce_taiga
+	[[dimension_overrides.dimensions]]
+		name = "biome:old_growth_spruce_taiga"
+		description = "%player% is in The Old Spruce Taiga"
+		state = ""
+		largeImageKey = ["old_growth_spruce_taiga"]
+		largeImageText = "In the Old Spruce Taiga"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #plains
+	[[dimension_overrides.dimensions]]
+		name = "biome:plains"
+		description = "%player% is in The Plains"
+		state = ""
+		largeImageKey = ["plains"]
+		largeImageText = "In the Plains"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #river
+	[[dimension_overrides.dimensions]]
+		name = "biome:river"
+		description = "%player% is in The River"
+		state = ""
+		largeImageKey = ["river"]
+		largeImageText = "In the River"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #savanna
+	[[dimension_overrides.dimensions]]
+		name = "biome:savanna"
+		description = "%player% is in The Savanna"
+		state = ""
+		largeImageKey = ["savanna"]
+		largeImageText = "In the Savanna"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #savanna_plateau
+	[[dimension_overrides.dimensions]]
+		name = "biome:savanna_plateau"
+		description = "%player% is in The Savanna Plateau"
+		state = ""
+		largeImageKey = ["savanna_plateau"]
+		largeImageText = "In the Savanna Plateau"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #small_end_islands
+	[[dimension_overrides.dimensions]]
+		name = "biome:small_end_islands"
+		description = "%player% is in The Small End Islands"
+		state = ""
+		largeImageKey = ["small_end_islands"]
+		largeImageText = "In the Small End Islands"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #snowy_beach
+	[[dimension_overrides.dimensions]]
+		name = "biome:snowy_beach"
+		description = "%player% is in The Snowy Beach"
+		state = ""
+		largeImageKey = ["snowy_beach"]
+		largeImageText = "In the Snowy Beach"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #snowy_plains
+	[[dimension_overrides.dimensions]]
+		name = "biome:snowy_plains"
+		description = "%player% is in The Snowy Plains"
+		state = ""
+		largeImageKey = ["snowy_plains"]
+		largeImageText = "In the Snowy Plains"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #snowy_slopes
+	[[dimension_overrides.dimensions]]
+		name = "biome:snowy_slopes"
+		description = "%player% is in The Snowy Slopes"
+		state = ""
+		largeImageKey = ["snowy_slopes"]
+		largeImageText = "In the Snowy Slopes"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #snowy_taiga
+	[[dimension_overrides.dimensions]]
+		name = "biome:snowy_taiga"
+		description = "%player% is in The Snowy Taiga"
+		state = ""
+		largeImageKey = ["snowy_taiga"]
+		largeImageText = "In the Snowy Taiga"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #soul_sand_valley
+	[[dimension_overrides.dimensions]]
+		name = "biome:soul_sand_valley"
+		description = "%player% is in The Soul Sand Valley"
+		state = ""
+		largeImageKey = ["soul_sand_valley"]
+		largeImageText = "In the Soul Sand Valley"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #sparse_jungle
+	[[dimension_overrides.dimensions]]
+		name = "biome:sparse_jungle"
+		description = "%player% is in The Sparse Jungle"
+		state = ""
+		largeImageKey = ["sparse_jungle"]
+		largeImageText = "In the Sparse Jungle"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #stony_peaks
+	[[dimension_overrides.dimensions]]
+		name = "biome:stony_peaks"
+		description = "%player% is in The Stony Peaks"
+		state = ""
+		largeImageKey = ["stony_peaks"]
+		largeImageText = "In the Stony Peaks"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #stony_shore
+	[[dimension_overrides.dimensions]]
+		name = "biome:stony_shore"
+		description = "%player% is in The Stony Shore"
+		state = ""
+		largeImageKey = ["stony_shore"]
+		largeImageText = "In the Stony Shore"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #sunflower_plains
+	[[dimension_overrides.dimensions]]
+		name = "biome:sunflower_plains"
+		description = "%player% is in The Sunflower Plains"
+		state = ""
+		largeImageKey = ["sunflower_plains"]
+		largeImageText = "In the Sunflower Plains"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #swamp
+	[[dimension_overrides.dimensions]]
+		name = "biome:swamp"
+		description = "%player% is in The Swamp"
+		state = ""
+		largeImageKey = ["swamp"]
+		largeImageText = "In the Swamp"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+
+  #taiga
+	[[dimension_overrides.dimensions]]
+		name = "biome:taiga"
+		description = "%player% is in The Taiga"
+		state = ""
+		largeImageKey = ["taiga"]
+		largeImageText = "In the Taiga"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+
+  #warm_ocean
+	[[dimension_overrides.dimensions]]
+		name = "biome:warm_ocean"
+		description = "%player% is in The Warm Ocean"
+		state = ""
+		largeImageKey = ["warm_ocean"]
+		largeImageText = "In the Warm Ocean"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+
+  #warped_forest
+	[[dimension_overrides.dimensions]]
+		name = "biome:warped_forest"
+		description = "%player% is in The Warped Forest"
+		state = ""
+		largeImageKey = ["warped_forest"]
+		largeImageText = "In the Warped Forest"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+
+  #windswept_forest
+	[[dimension_overrides.dimensions]]
+		name = "biome:windswept_forest"
+		description = "%player% is in The Windswept Forest"
+		state = ""
+		largeImageKey = ["windswept_forest"]
+		largeImageText = "In the Windswept Forest"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+
+  #windswept_gravelly_hills
+	[[dimension_overrides.dimensions]]
+		name = "biome:windswept_gravelly_hills"
+		description = "%player% is in The Windswept Gravelly Hills"
+		state = ""
+		largeImageKey = ["windswept_gravelly_hills"]
+		largeImageText = "In the Windswept Gravelly Hills"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+
+  #windswept_hills
+	[[dimension_overrides.dimensions]]
+		name = "biome:windswept_hills"
+		description = "%player% is in The Windswept Hills"
+		state = ""
+		largeImageKey = ["windswept_hills"]
+		largeImageText = "In the Windswept Hills"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+
+  #windswept_savanna
+	[[dimension_overrides.dimensions]]
+		name = "biome:windswept_savanna"
+		description = "%player% is in The Windswept Savanna"
+		state = ""
+		largeImageKey = ["windswept_savanna"]
+		largeImageText = "In the Windswept Savanna"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+
+  #wooded_badlands
+	[[dimension_overrides.dimensions]]
+		name = "biome:wooded_badlands"
+		description = "%player% is in The Wooded Badlands"
+		state = ""
+		largeImageKey = ["wooded_badlands"]
+		largeImageText = "In the Wooded Badlands"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+		
+		
+  #nether_wastes
+	[[dimension_overrides.dimensions]]
+		name = "biome:nether_wastes"
+		description = "%player% is in The Nether"
+		state = ""
+		largeImageKey = ["nether_wastes"]
+		largeImageText = "In the Nether"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+  #the_end
+	[[dimension_overrides.dimensions]]
+		name = "biome:the_end"
+		description = "%player% is in The End"
+		state = ""
+		largeImageKey = ["the_end"]
+		largeImageText = "In the End"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []			
+
+		
