@@ -942,6 +942,15 @@
 		largeImageText = "In the End"
 		smallImageKey = ["mclogo"]
 		smallImageText = "%mods% mods installed"
-		buttons = []			
-
+		buttons = []		
 		
+  #beach
+	[[dimension_overrides.dimensions]]
+		name = "biome:beach"
+		description = "%player% is in The Beach"
+		state = ""
+		largeImageKey = ["beach"]
+		largeImageText = "In the Beach"
+		smallImageKey = ["mclogo"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
