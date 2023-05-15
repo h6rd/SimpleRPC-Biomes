@@ -1,6 +1,8 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/h6rd/assets/main/srpc.gif" width="300px" draggable="false"><br>
+  Displays all biomes in the game.
 </p>
+
 
 Using:
 1. Install mod [**Simple Discord RPC**](https://www.curseforge.com/minecraft/mc-mods/simple-discord-rpc)
