@@ -6,6 +6,7 @@ Preview:
 
 
 Using:
-1. Download "simple-rpc.toml"
-2. Place the file under "config\simple-rpc"
-3. Enjoy 
+1. Install mod [**Simple Discord RPC**](https://www.curseforge.com/minecraft/mc-mods/simple-discord-rpc)
+2. Download "simple-rpc.toml"
+3. Place the file under "config\simple-rpc"
+4. Enjoy 
