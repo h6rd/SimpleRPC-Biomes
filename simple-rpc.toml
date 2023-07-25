@@ -960,7 +960,7 @@
 		name = "biome:cherry_grove"
 		description = "%player% is in The Cherry Grove"
 		state = ""
-		largeImageKey = ["beach"]
+		largeImageKey = ["cherry_grove"]
 		largeImageText = "In the Cherry Grove"
 		smallImageKey = ["mclogo"]
 		smallImageText = "%mods% mods installed"
