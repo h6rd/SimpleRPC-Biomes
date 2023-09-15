@@ -5,7 +5,7 @@
 
 Usage:
 1. Install mod [**Simple Discord RPC**](https://www.curseforge.com/minecraft/mc-mods/simple-discord-rpc)
-2. Download "simple-rpc.toml" from [Releases](https://github.com/h6rd/SimpleRPC-Biomes/releases)
-3. Place the file under "config\simple-rpc"
-4. Enjoy
+2. Download "simple-rpc.toml" from [Releases](https://github.com/h6rd/SimpleRPC-Biomes/releases/latest/download/simple-rpc.toml)
+4. Place the file under "config\simple-rpc"
+5. Enjoy
 
