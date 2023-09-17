@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/h6rd/assets/main/srpc.gif" width="300px" draggable="false"><br>
+  <img src="https://raw.githubusercontent.com/h6rd/SimpleRPC-Biomes/2ab9a875e571b257848494d12698e6f1df26067e/Icons/srpc.gif" width="300px" draggable="false"><br>
   Displays all biomes in the game.
 </p>
 
